@@ -1,0 +1,4 @@
+First Name;AGE (Years);  e-mail  ;Has Pets?;Income($)
+Alice;25;alice@example.com;True;50000
+Bob;30;bob@example.com;False;60000
+Charlie;35;charlie@example.com;True;70000
