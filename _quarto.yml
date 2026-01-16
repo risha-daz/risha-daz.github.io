@@ -3,13 +3,16 @@ project:
   output-dir: docs
 
 website:
+  description: "A blog built with Quarto"
+  site-url: https://risha-daz.github.io/ # you must change this appropriately for RSS feeds to work properly
   title: "Sarisha's Blog"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
+    right:
       - about.qmd
-
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
 format:
   html:
     theme:
