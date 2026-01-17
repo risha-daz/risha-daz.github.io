@@ -22,32 +22,64 @@
 
 
 <p>AI tools are all the rage now, enabling the humble individual to create Ghibli-style art, single-handedly build mobile applications, and generate 1200-word blog posts for college assignments within minutes. It is undeniably powerful. But with great power comes… great amounts of paperwork? We often see debates around commercial AI being trained on publicly available data, and many wonder why people create “unnecessary” hurdles that seem to slow technological progress.</p>
-<section id="eating-our-own-tail-the-ai-feedback-loop" class="level3">
-<h3 class="anchored" data-anchor-id="eating-our-own-tail-the-ai-feedback-loop">Eating our own tail: The AI feedback loop</h3>
-<section id="model-collapse" class="level4">
-<h4 class="anchored" data-anchor-id="model-collapse">Model Collapse</h4>
-<p>Stack Overflow recently recorded a record low number of questions asked, as low as its launch 18 years ago. With AI copilots embedded directly into coding environments, developers no longer need to wait for another human to interpret their question and respond. Ironically, Stack Overflow now thrives by selling AI add-ons powered by the very millions of human-written questions and answers it once depended on <span class="citation" data-cites="sherwood2025">(News 2025)</span>. This raises a troubling feedback loop: if people stop contributing original knowledge, the data source that trains future models begins to dry up. Training AI on AI-generated content risks “model collapse,” where errors, biases, and oversimplifications compound over time. Rare bugs, niche libraries, and genuinely novel problems still require human collaboration and creativity, not pattern remixing. Users of such AI tools frequently encounter problems of the AI “hallucinating” when it makes up information instead of saying “I don’t know”. When the user is not familiar with the topic they might not be able to pinpoint when this happens and get completely wrong information.</p>
+<section id="the-ai-feedback-loop-and-model-collapse" class="level3">
+<h3 class="anchored" data-anchor-id="the-ai-feedback-loop-and-model-collapse">🔁 The AI feedback loop and Model Collapse</h3>
+<p>Stack Overflow recently recorded a record low number of questions asked, as low as its launch 18 years ago. With AI copilots embedded directly into coding environments, developers no longer need to wait for another human to interpret their question and respond. Ironically, Stack Overflow now thrives by selling AI add-ons powered by the very millions of human-written questions and answers it once depended on <span class="citation" data-cites="sherwood2025">(News 2025)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://risha-daz.github.io/posts/data_science/stack-overflow.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Image Description: The rise and fall of Stack Overflow <span class="citation" data-cites="sherwood2025">(News 2025)</span></figcaption>
+</figure>
+</div>
+<p>This raises a troubling feedback loop: if people stop contributing original knowledge, the data source that trains future models begins to dry up. Training AI on AI-generated content risks “model collapse,” where errors, biases, and oversimplifications compound over time. Rare bugs, niche libraries, and genuinely novel problems still require human collaboration and creativity, not pattern remixing. Users of such AI tools frequently encounter problems of the AI “hallucinating” when it makes up information instead of saying “I don’t know”. When the user is not familiar with the topic they might not be able to pinpoint when this happens and get completely wrong information.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://risha-daz.github.io/posts/data_science/ai-hallucination.png" class="img-fluid figure-img"></p>
+<figcaption>Image Description: AI chatbot hallucinating information where it doesn’t exist <span class="citation" data-cites="superannotate_hallucinations">(SuperAnnotate 2024)</span></figcaption>
+</figure>
+</div>
 <p>The same tension exists in AI-generated art. Artistic choices are deeply intentional and personal. Treating this creative labor merely as raw material for a commercial product risks stripping it of context, authorship, and meaning.</p>
-<p>Studies have repeatedly shown how, due to the large amount of AI art now being publicly available, new AI is being trained on existing AI art and the results are getting worse- another example of “model collapse”. Model collapse is especially noticeable in image-generating models as the image output decreases in quality, diversity and precision</p>
-<p>Model collapse starts from the tails, which can lead to rare cases being omitted entirely from subsequent models. Eg. The diagnosis of a rare disease.</p>
-<p>This is why crediting data sources and respecting intellectual property is not optional. It acknowledges the human creators without whom AI would have nothing to learn from. AI can only generate; it never truly creates.</p>
+<p>Studies have repeatedly shown how, due to the large amount of AI art now being publicly available, new AI is being trained on existing AI art and the results are getting worse- another example of “model collapse”. This is a long diagnosed problem, as sometimes deliberate noise is added during training to mitigate it <span class="citation" data-cites="bishop1995">(Bishop 1995)</span>. Model collapse is especially noticeable in image-generating models as the image output decreases in quality, diversity and precision.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://risha-daz.github.io/posts/data_science/dogs.png" class="img-fluid figure-img"></p>
+<figcaption>Image Description: Generated images loose rarer breeds and progressively get worse <span class="citation" data-cites="nature_modelcollapse">(Nature 2024)</span></figcaption>
+</figure>
+</div>
+<p>Model collapse starts from the tails, which can lead to rare cases being omitted entirely from subsequent models. Eg. The diagnosis of a rare disease. Then the biases progressively get amplified, until only the average, the supposed “best representation” remains. Once the training data looses its diversity, the model looses its ability to learn anything meaningful either. <span class="citation" data-cites="ibm_modelcollapse">(IBM 2025)</span></p>
+<p>This is why crediting data sources and respecting intellectual property is not optional. It acknowledges the human creators without whom AI would have nothing to learn from. AI can only generate; it never truly creates. Under the current over-abundance of data, AI is silently killing its source, which can suddenly cause all AI infrastructure to collapse.</p>
 </section>
+<section id="the-ai-sponge-in-dirty-water" class="level3">
+<h3 class="anchored" data-anchor-id="the-ai-sponge-in-dirty-water">🧽 The AI sponge in dirty water</h3>
+<p>Another common fact in the AI sphere is that the AI model is as good as the data is trained on. The AI, like a sponge, will absorb everything as it is given, including any biases. And thus we have another problem, which is also compounded by repeated training. All data reflects the values, power structures, and blind spots of the societies that produce it. For example, language models trained on internet text may also reproduce gender stereotypes or associate certain professions with specific ethnicities <span class="citation" data-cites="utoronto_bias">(University of Toronto Libraries 2025)</span>. Deciding what counts as “bias” is itself a value judgment, raising the question: who gets to define fairness, and whose perspectives are prioritized or erased?</p>
+<p>If this fact is not taken into account in the real world, a number of problems can spring up. A model’s prediction could end up becoming a “self-fulfilling prophecy” if the results are blindly trusted and put out in the world, where more AI models train on this data and perpetuate the bias further.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://risha-daz.github.io/posts/data_science/bias-cycle.png" class="img-fluid figure-img"></p>
+<figcaption>Image Description: The self fulfilling prophecy of AI Bias</figcaption>
+</figure>
+</div>
+<p>But why is it so hard to remove? Models store words as embeddings, which is just a fancy way of saying that words are converted to a series of numbers, which are stored relative to other words, and inherently have no meaning. Similar words such as “hat” and “cap” will be “closer” to each other while different words like “lollipop” and “spreadsheet” will be further apart. In addition to this, you could also “subtract” words from other words to get something meaningful like the following. Man is to woman as king is to queen. <img src="https://latex.codecogs.com/png.latex?%0A%5Coverrightarrow%7B%5Ctext%7Bman%7D%7D%20-%20%5Coverrightarrow%7B%5Ctext%7Bwoman%7D%7D%0A%5C;%5Capprox%5C;%0A%5Coverrightarrow%7B%5Ctext%7Bking%7D%7D%20-%20%5Coverrightarrow%7B%5Ctext%7Bqueen%7D%7D%0A"></p>
+<p>While many such analogies make sense, this also means that the foundation of words themselves can easily carry biases too, like:</p>
+<ul>
+<li>He is to carpentry as she is to sewing</li>
+<li>Father is to doctor as mother is to nurse</li>
+<li>Man is to computer programmer as woman is to homemaker <span class="citation" data-cites="bolukbasi2016">(Bolukbasi et al. 2016)</span></li>
+</ul>
+<p>While embeddings can still be interpreted by humans and thus we can implement methods to combat this bias, as we move of to Large Language Models and Transformer-based systems, they become much more complicated to identify, much less remove. Thus we always have to be vigilant about such things existing out in the wild.</p>
 </section>
-<section id="does-truly-unbiased-data-exist" class="level3">
-<h3 class="anchored" data-anchor-id="does-truly-unbiased-data-exist">Does truly unbiased data exist?</h3>
-<section id="biased-input-data" class="level4">
-<h4 class="anchored" data-anchor-id="biased-input-data">Biased input data</h4>
-<p>Another problem (which is also compounded by repeated training) is the bias that exists in most data. All data reflects the values, power structures, and blind spots of the societies that produce it. For example, language models trained on internet text may also reproduce gender stereotypes or associate certain professions with specific ethnicities <span class="citation" data-cites="utoronto_bias">(University of Toronto Libraries 2025)</span>. Deciding what counts as “bias” is itself a value judgment, raising the question: who gets to define fairness, and whose perspectives are prioritized or erased? If this fact is not taken into account in the real world, a number of problems can spring up. A model’s prediction could end up becoming a “self-fulfilling prophecy” if the results are blindly trusted and put out in the world, where more AI models train on this data and perpetuate the bias further.</p>
-</section>
-</section>
-<section id="whodunit" class="level3">
-<h3 class="anchored" data-anchor-id="whodunit">Whodunit?</h3>
-<section id="taking-responsibility" class="level4">
-<h4 class="anchored" data-anchor-id="taking-responsibility">Taking responsibility</h4>
-<p>The AI chatbot Grok was recently criticized for being used to generate sexually explicit content involving minors, drawing scrutiny from multiple governments. <span class="citation" data-cites="cnbc_grok2026">(CNBC 2026)</span> This begs the question: If harmful content is produced, who is liable? the dataset sources, the model developers, or the prompt writer? The boundaries between data collector, IP holder, and AI user are increasingly entangled.</p>
-<p>One might argue that the AI model is just a tool which is being used by the human giving it the prompt. One might even argue it is the bias in the data that pushes the AI model to do questionable things, and it is the fault of the real world data. But in reality, using certain tools is fundamentally different from others. If you sit down to write an article about “How women do not belong in the workforce” and use a document software like MS Word, Word might fix your spelling and grammar errors, but it will not contribute meaningfully to your article to make it more legitimate. Searching on Google might land you on many pages filled with people agreeing with you. But you always actively choose to go and interact with these people, and the differences between a trusted study and a random social media comment are apparent. But encountering the same topic with a chatbot blurs all these lines and does little to distinguish between all the sources. It is up to the chatbot to interpret the legitimacy, and whether it chooses to convey the fact with the required gravity. It could oversimplify topics with many caveats, make obscure opinions seem commonplace, and in an effort to agree with the user it could falsify or make up information. In such cases it will be extremely hard to then track it down. The AI tool is an intelligent tool, and comes with its own biases, which can either contrast or compound the user’s bias.</p>
-<p>But all is not lost yet. In fact, having such conversations is the first step to starting to fix the problems that are associated with AI tools. Similar to how we now have rules regarding net neutrality, we can address these with open dialogue. We have to be aware of the implications of the tool we use, and seemingly, with great power, does come great responsibility. The process should include crediting and citing data, vetting of data, even if bias is not removed completely, it should be understood and the user should be cautioned toward it, and finally the laws governing the use of these AI tools should be firmly and clearly established.</p>
-</section>
+<section id="whodunit-accountability-in-the-ai-sphere" class="level3">
+<h3 class="anchored" data-anchor-id="whodunit-accountability-in-the-ai-sphere">🕵️ Whodunit? Accountability in the AI sphere</h3>
+<p>So does this discussion mean that the content generated by AI is owned by the producers of the dataset? The AI chatbot Grok was recently criticized for being used to generate sexually explicit content involving minors, drawing scrutiny from multiple governments. <span class="citation" data-cites="cnbc_grok2026">(CNBC 2026)</span> This begs the question: If harmful content is produced, who is liable? the dataset sources, the model developers, or the prompt writer? The boundaries between data collector, IP holder, and AI user are increasingly entangled.</p>
+<p>One might argue that the AI model is just a tool which is being used by the human giving it the prompt. One might even argue it is the bias in the data that pushes the AI model to do questionable things, and it is the fault of the real world data. But in reality, using certain tools is fundamentally different from others. If you sit down to write an article about “How women do not belong in the workforce” and use a document software like MS Word, Word might fix your spelling and grammar errors, but it will not contribute meaningfully to your article to make it more legitimate. Searching on Google might land you on many pages filled with people agreeing with you. But you always actively choose to go and interact with these people, and the differences between a trusted study and a random social media comment are apparent. But encountering the same topic with a chatbot blurs all these lines and does little to distinguish between all the sources. It is up to the chatbot to interpret the legitimacy, and whether it chooses to convey the fact with the required gravity. It could oversimplify topics with many caveats, make obscure opinions seem commonplace, and in an effort to agree with the user it could falsify or make up information. In such cases it will be extremely hard to then track it down. The AI tool is an intelligent tool, and comes with its own biases, which can either contrast or compound the user’s bias. We cannot treat it as “just another tool”, and we need to critically analyse the data it is being trained on.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://risha-daz.github.io/posts/data_science/oversimplification.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Image Description: How oversimplification erases meaninfgul details <span class="citation" data-cites="ted_amy_cuddy">(TED 2026)</span></figcaption>
+</figure>
+</div>
+<p>But all is not lost yet. In fact, having such conversations is the first step to starting to fix the problems that are associated with AI tools. Similar to how we now have rules regarding net neutrality, we can address these with open dialogue and critical thinking. The process should include crediting and citing data, vetting of data, bias removal, and even if bias is not removed completely, it should be understood and the user should be cautioned toward it, and finally the laws governing the use of these AI tools should be firmly and clearly established. We should not underestimate the value of the human-in-the-loop!</p>
+<p>AI is powerful in making complex topics simpler and digestible, and making powerful tools accessible. In the fairy-tale world of AI we might forget the complex reality behind it all. We have to be aware of the implications of the tool we use, and seemingly, with great power, does come great responsibility.</p>
 </section>
 <section id="references" class="level3">
 
@@ -56,12 +88,30 @@
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">📑 References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-bishop1995" class="csl-entry">
+Bishop, Christopher M. 1995. <span>“Training with Noise Is Equivalent to Tikhonov Regularization.”</span> <em>Neural Computation</em> 7 (1): 108–16. <a href="https://doi.org/10.1162/neco.1995.7.1.108">https://doi.org/10.1162/neco.1995.7.1.108</a>.
+</div>
+<div id="ref-bolukbasi2016" class="csl-entry">
+Bolukbasi, Tolga, Kai-Wei Chang, James Zou, Venkatesh Saligrama, and Adam Kalai. 2016. <span>“Man Is to Computer Programmer as Woman Is to Homemaker? Debiasing Word Embeddings.”</span> <em>arXiv Preprint</em>. <a href="https://arxiv.org/pdf/1607.06520">https://arxiv.org/pdf/1607.06520</a>.
+</div>
 <div id="ref-cnbc_grok2026" class="csl-entry">
 CNBC. 2026. <span>“India, EU Investigate Musk’s x After Grok Created Deepfake Child Porn.”</span> 2026. <a href="https://www.cnbc.com/2026/01/05/india-eu-investigate-musks-x-after-grok-created-deepfake-child-porn.html">https://www.cnbc.com/2026/01/05/india-eu-investigate-musks-x-after-grok-created-deepfake-child-porn.html</a>.
 </div>
+<div id="ref-ibm_modelcollapse" class="csl-entry">
+IBM. 2025. <span>“Model Collapse: Understanding the Risks of AI Trained on AI.”</span> 2025. <a href="https://www.ibm.com/think/topics/model-collapse">https://www.ibm.com/think/topics/model-collapse</a>.
+</div>
+<div id="ref-nature_modelcollapse" class="csl-entry">
+Nature. 2024. <span>“Why Some AI Models Collapse Without Human Data.”</span> 2024. <a href="https://doi.org/10.1038/d41586-024-02355-z">https://doi.org/10.1038/d41586-024-02355-z</a>.
+</div>
 <div id="ref-sherwood2025" class="csl-entry">
 News, Sherwood. 2025. <span>“Stack Overflow Forum Dead, Thanks AI — but Company’s Still Kicking AI.”</span> 2025. <a href="https://sherwood.news/tech/stack-overflow-forum-dead-thanks-ai-but-companys-still-kicking-ai/">https://sherwood.news/tech/stack-overflow-forum-dead-thanks-ai-but-companys-still-kicking-ai/</a>.
+</div>
+<div id="ref-superannotate_hallucinations" class="csl-entry">
+SuperAnnotate. 2024. <span>“LLM Hallucinations Complete Guide to AI Errors.”</span> 2024. <a href="https://www.superannotate.com/blog/ai-hallucinations">https://www.superannotate.com/blog/ai-hallucinations</a>.
+</div>
+<div id="ref-ted_amy_cuddy" class="csl-entry">
+TED. 2026. <span>“Amy Cuddy.”</span> 2026. <a href="https://www.ted.com/speakers/amy_cuddy">https://www.ted.com/speakers/amy_cuddy</a>.
 </div>
 <div id="ref-utoronto_bias" class="csl-entry">
 University of Toronto Libraries. 2025. <span>“Datasets, Bias, Discrimination - Artificial Intelligence for Image Research.”</span> 2025. <a href="https://guides.library.utoronto.ca/c.php?g=735513&amp;p=5297043">https://guides.library.utoronto.ca/c.php?g=735513&amp;p=5297043</a>.
