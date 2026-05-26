@@ -31,15 +31,111 @@ format:
           \titleformat{\section}{\large\bfseries\color{myblue}}{}{0em}{}[\titlerule]
           \AtBeginDocument{\renewcommand{\maketitle}{}}
   html:
-    theme: cosmo
-    css: resume.css
-    toc: false
+    theme: darkly
+    css: styles.css
+    toc: true
+    toc-location: right
+    toc-title: "On this page"
+    toc-depth: 2
     number-sections: false
-    anchor-sections: false
+    anchor-sections: true
     title-block: false
-    page-layout: full
+    page-layout: article
     format-links: false
 ---
+
+```{=html}
+<div class="resume-header">
+  <div>
+    <h1 class="resume-name">Sarisha Das</h1>
+    <p class="resume-role">Graduate, Master of Data Science · University of British Columbia, Vancouver</p>
+  </div>
+  <div class="resume-contact">
+    <a href="tel:+16043665742">+1 (604) 366-5742</a><br>
+    <a href="mailto:sarishadas.810@gmail.com">sarishadas.810@gmail.com</a><br>
+    <a href="https://www.linkedin.com/in/sarisha-das-4371b7191" target="_blank">LinkedIn</a>
+    &nbsp;|&nbsp;
+    <a href="https://github.com/risha-daz/" target="_blank">GitHub</a>
+  </div>
+</div>
+```
+
+## Experience
+
+```{=html}
+<div class="resume-entry">
+  <div class="resume-entry-header">
+    <div><strong>Associate Software Engineer</strong> &mdash; <em>Carelon Global Solutions India</em> (subsidiary of Anthem)</div>
+    <span class="resume-dates">Jul 2023 – Aug 2025 &nbsp;·&nbsp; Bengaluru, India</span>
+  </div>
+  <ul>
+    <li>Built Post-Acute Care (OASIS) document processing pipelines using <strong>Amazon Textract</strong> with regex-based medical code matching and coordinate-level extraction; integrated LLMs for downstream reasoning and summarization of extracted clinical context.</li>
+    <li>Developed <strong>OpenCV and YOLO</strong>-based form element detection (checkboxes, radio buttons) with multiprocessing for scalable, high-throughput processing across multiple form versions.</li>
+    <li>Part of team that designed a modular, abstraction-driven <strong>RAG pipeline</strong> for breast reduction surgery prior-authorization with Pydantic-enforced output schemas encoding complex medical decision logic, engineered for easy extension to additional surgical procedures.</li>
+    <li>Implemented <strong>human-in-the-loop GPT</strong>-based systems — automating approvals, converting clinical criteria into algorithmic decision logic, and enabling rapid document navigation for medical professionals.</li>
+  </ul>
+</div>
+
+<div class="resume-entry">
+  <div class="resume-entry-header">
+    <div><strong>Data Analysis and Research Intern</strong> &mdash; <em>TRIUMF (Mitacs GRI, UBC)</em></div>
+    <span class="resume-dates">May 2022 – Aug 2022 &nbsp;·&nbsp; Vancouver, Canada</span>
+  </div>
+  <ul>
+    <li>Analyzed nuclear decay datasets from experiments on Cs148 → Ba148 across multiple runs (GRIFFIN); cleaned data and estimated peaks using mathematical models.</li>
+    <li>Analyzed correlation across electron and gamma-ray detector sources to identify possible underlying causes and new effects.</li>
+    <li>Worked with ROOT (CERN), C++, and Linux; performed hands-on maintenance of DESCANT detectors for gamma-ray and beta-delayed neutron emission detection.</li>
+    <li>Presented by colleagues: Preliminary results on the ²⁰Ne(p,γ) reaction rate study using GRIFFIN detectors and the DRAGON recoil spectrometer at TRIUMF, <a href="https://ui.adsabs.harvard.edu/abs/2023APS..HAWD09003S/abstract" target="_blank">APS HAW23</a>.</li>
+  </ul>
+</div>
+```
+
+## Education & Projects
+
+```{=html}
+<div class="resume-entry">
+  <div class="resume-entry-header">
+    <div><strong>Master of Data Science</strong> &mdash; University of British Columbia</div>
+    <span class="resume-dates">Aug 2025 – 2026 (Ongoing) &nbsp;·&nbsp; Vancouver, BC</span>
+  </div>
+  <p style="color:var(--gh-muted); font-size:0.88rem; margin: 0.2rem 0 0.5rem;"><em>Cumulative Average: 96.6</em></p>
+  <ul>
+    <li><strong>Projects:</strong> Built a retrieval system for Amazon grocery products using embeddings and LLM pipelines with systematic prompt evaluation (<a href="https://rishadaz-amazon-retriever.hf.space/" target="_blank">HF Spaces</a>); developed an LLM-integrated Vancouver crime analytics dashboard; engineered a Python package for Wordle-style word games with automated CI/CD.</li>
+    <li><strong>Hackathon:</strong> Applied contrastive learning to museum beetle specimen imagery to forecast drought and precipitation indices — bridging computer vision and climate modelling in a low-label, high-stakes prediction setting.</li>
+    <li><strong>Writing:</strong> Authored a technical blog on AI safety and data-driven decision making (<a href="https://risha-daz.github.io/posts/data_science/" target="_blank">AI Safety Blog</a>), demonstrating ability to communicate complex ML concepts to broader audiences.</li>
+  </ul>
+</div>
+
+<div class="resume-entry">
+  <div class="resume-entry-header">
+    <div><strong>Bachelor of Technology</strong> &mdash; Indian Institute of Technology Indore</div>
+    <span class="resume-dates">2019 – 2023 &nbsp;·&nbsp; Indore, MP, India</span>
+  </div>
+  <p style="color:var(--gh-muted); font-size:0.88rem; margin: 0.2rem 0 0.5rem;"><em>GPA: 9.25 (Major in Mech Engg.) &nbsp;·&nbsp; 10.0 (Minor in Astronomy)</em></p>
+  <ul>
+    <li><strong>Key Courses:</strong> Linear Algebra, Calculus, Numerical Methods, Astronomical Data Analysis Techniques.</li>
+    <li><strong>Projects:</strong> Simulated autonomous drone navigation and landing using dual cameras (C++, OpenCV, Ardupilot, Gazebo); built time-series models for astronomy and physics problems; programmed an Arduino-based automatic dehumidifier for lab equipment protection.</li>
+    <li><strong>Astronomy Club</strong> (3–4 years): Developed and maintained club website (HTML, Node.js, React); collaborated on research projects applying Python and time-series modelling to real observational data; estimated galaxy eccentricity via Fourier Transform (Python).</li>
+    <li><strong>Leadership:</strong> Spearheaded "Netritva," a city-wide Student Leadership Summit across local institutes, curating invited talks, student-led sessions, and welfare initiatives to drive cross-campus community building.</li>
+    <li><strong>Voice-Enabled Space Weather Forecasting</strong> (funded, DRISHTI CPS Foundation): Built a full-stack system (Flask, React, PostgreSQL, Azure) with a Vosk-based voice interface for querying space weather data, and designed an API layer for efficient database querying and real-time response delivery.</li>
+  </ul>
+</div>
+```
+
+## Skills
+
+```{=html}
+<div class="resume-skills">
+  <div class="resume-skill-row"><strong>Languages</strong><span>Python, R, C++, JavaScript, SQL</span></div>
+  <div class="resume-skill-row"><strong>ML / DS</strong><span>scikit-learn, PyTorch, TensorFlow, Bayesian Statistics, Time Series, Statistical Modelling, Computer Vision (YOLO, OpenCV)</span></div>
+  <div class="resume-skill-row"><strong>LLM / AI</strong><span>RAG Pipelines, Agentic LLMs, Prompt Engineering, LLM Output Evaluation, Pydantic, HuggingFace</span></div>
+  <div class="resume-skill-row"><strong>Tools</strong><span>Docker, Git, CI/CD, Amazon Textract OCR, OpenCV, YOLO</span></div>
+  <div class="resume-skill-row"><strong>Cloud</strong><span>AWS, GCP, Azure</span></div>
+  <div class="resume-skill-row"><strong>Web / Backend</strong><span>Node.js, React, Flask, REST APIs, Streamlit, Shiny, Quarto</span></div>
+  <div class="resume-skill-row"><strong>Databases</strong><span>PostgreSQL, MongoDB</span></div>
+  <div class="resume-skill-row"><strong>Other</strong><span>Data Visualization, Distributed Systems</span></div>
+</div>
+```
 
 ```{=latex}
 {\LARGE\noindent\textbf{\textcolor{myblue}{Sarisha Das}}} \hfill +1 (604) 366-5742 \\

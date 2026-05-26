@@ -390,9 +390,119 @@ hr {
   opacity: 1;
 }
 
+/* ─── Resume page ────────────────────────────────────────────────────────── */
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--gh-border);
+  margin-bottom: 0.5rem;
+}
+
+.resume-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--gh-accent);
+  margin: 0 0 0.2rem;
+}
+
+.resume-role {
+  font-size: 0.9rem;
+  color: var(--gh-muted);
+  margin: 0;
+}
+
+.resume-contact {
+  font-size: 0.85rem;
+  color: var(--gh-muted);
+  text-align: right;
+  line-height: 1.8;
+}
+
+.resume-contact a {
+  color: var(--gh-muted);
+}
+.resume-contact a:hover {
+  color: var(--gh-accent);
+}
+
+.resume-entry {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--gh-border-muted);
+}
+
+.resume-entry:last-of-type {
+  border-bottom: none;
+}
+
+.resume-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.92rem;
+  color: var(--gh-text);
+}
+
+.resume-dates {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--gh-muted);
+  white-space: nowrap;
+}
+
+.resume-entry ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.25rem;
+  font-size: 0.88rem;
+}
+
+.resume-entry li {
+  margin-bottom: 0.35rem;
+  color: #cdd9e5;
+}
+
+.resume-entry li::marker {
+  color: var(--gh-accent);
+}
+
+.resume-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+}
+
+.resume-skill-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.resume-skill-row strong {
+  min-width: 110px;
+  color: var(--gh-text);
+  flex-shrink: 0;
+}
+
+.resume-skill-row span {
+  color: var(--gh-muted);
+}
+
 /* ─── Responsive ─────────────────────────────────────────────────────────── */
 @media (max-width: 640px) {
   .hero-name { font-size: 1.6rem; }
   .project-grid { grid-template-columns: 1fr; }
   .card-header-row { flex-direction: column; }
+  .resume-header { flex-direction: column; }
+  .resume-contact { text-align: left; }
+  .resume-entry-header { flex-direction: column; }
+  .resume-skill-row { flex-direction: column; gap: 0.1rem; }
+  .resume-skill-row strong { min-width: unset; }
 }
