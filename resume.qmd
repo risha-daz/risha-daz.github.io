@@ -34,14 +34,18 @@ format:
     theme: darkly
     css: styles.css
     toc: true
-    toc-location: right
-    toc-title: "On this page"
+    toc-title: "Resume"
     toc-depth: 2
     number-sections: false
     anchor-sections: true
     title-block: false
     page-layout: article
     format-links: false
+    grid:
+      sidebar-width: 220px
+      margin-width: 0px
+      body-width: 740px
+      gutter-width: 1.5rem
 ---
 
 ```{=html}

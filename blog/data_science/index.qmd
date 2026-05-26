@@ -7,6 +7,11 @@ format:
   html:
     toc: true
     toc-depth: 3
+    sidebar: true
+    sidebar-width: 220px
+    margin-width: 0px
+    body-width: 740px
+    gutter-width: 1.5rem
 bibliography: references.bib
 title-block-banner: true
 categories: [information]

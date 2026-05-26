@@ -89,15 +89,29 @@ code, pre, kbd {
   color: var(--gh-text) !important;
 }
 
-/* ─── Page layout ────────────────────────────────────────────────────────── */
-#quarto-content, .page-layout-full {
+/* ─── Global overflow fix ─────────────────────────────────────────────────── */
+html, body {
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+img, video, iframe, pre, table {
+  max-width: 100%;
+}
+
+/* ─── Page background ────────────────────────────────────────────────────── */
+html, body,
+#quarto-content,
+.page-layout-full,
+.page-layout-article,
+main.content {
   background-color: var(--gh-bg) !important;
 }
 
-.quarto-container {
-  max-width: 900px;
-  padding: 0 1.5rem;
-}
 
 /* ─── Hero ───────────────────────────────────────────────────────────────── */
 .hero {
@@ -496,9 +510,12 @@ hr {
 }
 
 /* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .project-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 640px) {
   .hero-name { font-size: 1.6rem; }
-  .project-grid { grid-template-columns: 1fr; }
   .card-header-row { flex-direction: column; }
   .resume-header { flex-direction: column; }
   .resume-contact { text-align: left; }

@@ -349,6 +349,6 @@ page-layout: full
 <div class="writing-callout">
   I write about AI safety, data-driven decision making, and machine learning at an accessible level.
   Check out the <a href="blog/index.qmd">blog →</a>, including my post on
-  <a href="https://risha-daz.github.io/posts/data_science/" target="_blank">AI Safety &amp; Data Science</a>.
+  <a href="https://risha-daz.github.io/blog/data_science/" target="_blank">AI Safety &amp; Data Science</a>.
 </div>
 ```

@@ -37,3 +37,8 @@ format:
     code-copy: true
     toc: false
     link-external-newwindow: true
+    grid:
+      sidebar-width: 0px
+      margin-width: 0px
+      body-width: 960px
+      gutter-width: 1.5rem

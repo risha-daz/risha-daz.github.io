@@ -11,4 +11,9 @@ listing:
   filter-ui: false
   fields: [date, title, description, categories, reading-time]
 page-layout: full
+format:
+  html:
+    grid:
+      margin-width: 220px
+      body-width: 740px
 ---
