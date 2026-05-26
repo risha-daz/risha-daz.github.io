@@ -1,0 +1,50 @@
+---
+title: "Experience"
+---
+
+## Education
+
+**MSc Data Science** · Your University · *2024 – 2026 (expected)*
+
+- Relevant coursework: Machine Learning, Statistical Inference, Data Engineering, Deep Learning
+- Thesis: [Your thesis topic, if applicable]
+
+**BSc Computer Science** · Your University · *2020 – 2024*
+
+---
+
+## Work Experience
+
+**Job Title** · Company Name · *Month Year – Month Year*
+
+- What you did and the impact it had
+- Technologies or methods used
+- Quantify outcomes where possible (e.g. "reduced processing time by 40%")
+
+**Job Title** · Company Name · *Month Year – Month Year*
+
+- What you did
+- Technologies used
+
+---
+
+## Skills
+
+**Languages:** Python, JavaScript/TypeScript, R, SQL, HTML/CSS
+
+**Data & ML:** pandas, NumPy, scikit-learn, PyTorch / TensorFlow, Quarto, Streamlit, Shiny
+
+**Web:** React, Node.js, Flask
+
+**Cloud & DevOps:** AWS, GCP, Azure, Docker, GitHub Actions, Git
+
+---
+
+## Certifications & Awards
+
+- **Certification Name** · Issuing Body · *Year*
+- **Award Name** · *Year*
+
+---
+
+*[Download PDF resume ↓](assets/resume.pdf){.btn .btn-outline-primary .btn-sm}*

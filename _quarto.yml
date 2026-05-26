@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Sarisha Das"
+  description: "Data Science MSc student & developer"
+  favicon: assets/favicon.ico
+
+  navbar:
+    background: "#0d1117"
+    foreground: "#e6edf3"
+    border: false
+    left:
+      - text: "About"
+        href: index.qmd
+      - text: "Blog"
+        href: blog/index.qmd
+    right:
+      - icon: github
+        href: https://github.com/risha-daz
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/sarisha-das-4371b7191
+        aria-label: LinkedIn
+
+  page-footer:
+    background: "#0d1117"
+    foreground: "#8b949e"
+    center: "© 2026 Sarisha Das · Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    highlight-style: github-dark
+    code-copy: true
+    toc: false
+    link-external-newwindow: true

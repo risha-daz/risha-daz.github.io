@@ -1,0 +1,43 @@
+---
+title: "Projects"
+---
+
+A selection of things I've built. More on [GitHub →](https://github.com/yourusername)
+
+---
+
+### Project Name One
+
+*Python · scikit-learn · Streamlit*
+
+Short description of what the project does, the problem it solves, and anything interesting about the approach. One or two sentences is enough.
+
+[GitHub](https://github.com/yourusername/project-one){.btn .btn-sm .btn-outline-dark}
+[Live demo](https://your-demo-link.com){.btn .btn-sm .btn-outline-primary}
+
+---
+
+### Project Name Two
+
+*React · Node.js · PostgreSQL*
+
+Short description of what the project does and the interesting technical choices you made. What would someone learn from reading the code or using it?
+
+[GitHub](https://github.com/yourusername/project-two){.btn .btn-sm .btn-outline-dark}
+
+---
+
+### Project Name Three
+
+*Python · GCP · Docker*
+
+Short description.
+
+[GitHub](https://github.com/yourusername/project-three){.btn .btn-sm .btn-outline-dark}
+[Write-up](blog/project-three-writeup.md){.btn .btn-sm .btn-outline-secondary}
+
+---
+
+::: {.callout-note appearance="minimal"}
+Some projects are private or under active development. Reach out if you'd like to know more.
+:::

@@ -1,0 +1,104 @@
+---
+title: ""
+author: ""
+date: ""
+format:
+  pdf:
+    documentclass: article
+    classoption:
+      - 10pt
+    geometry:
+      - margin=0.3in
+    block-headings: false
+    toc: false
+    number-sections: false
+    indent: false
+    include-in-header:
+      - text: |
+          \usepackage{enumitem}
+          \pagestyle{empty}
+          \usepackage{xcolor}
+          \definecolor{myblue}{RGB}{0, 70, 127}
+          \usepackage{hyperref}
+          \hypersetup{
+              colorlinks=true,
+              linkcolor=myblue,
+              urlcolor=myblue,
+              citecolor=myblue
+          }
+          \usepackage{titlesec}
+          \setlist[itemize]{leftmargin=*, noitemsep, topsep=1.5pt, label=\textcolor{myblue}{\textbullet}}
+          \titleformat{\section}{\large\bfseries\color{myblue}}{}{0em}{}[\titlerule]
+          \AtBeginDocument{\renewcommand{\maketitle}{}}
+  html:
+    theme: cosmo
+    css: resume.css
+    toc: false
+    number-sections: false
+    anchor-sections: false
+    title-block: false
+    page-layout: full
+    format-links: false
+---
+
+```{=latex}
+{\LARGE\noindent\textbf{\textcolor{myblue}{Sarisha Das}}} \hfill +1 (604) 366-5742 \\
+Graduate, Master of Data Science \hfill \href{mailto:sarishadas.810@gmail.com}{sarishadas.810@gmail.com} \\
+University of British Columbia, Vancouver \hfill \href{https://www.linkedin.com/in/sarisha-das-4371b7191}{LinkedIn} \quad | \quad \href{https://github.com/risha-daz/}{GitHub}
+\vspace{-1.2em}
+
+
+\section*{Experience}
+\vspace{-0.45em}
+
+\textbf{Associate Software Engineer} \hfill Jul 2023 -- Aug 2025 (2+ years) \\
+\textit{Carelon Global Solutions India} (subsidiary of Anthem) \hfill \textit{Bengaluru, India }
+\begin{itemize}
+\item Built Post-Acute Care (OASIS) document processing pipelines using Amazon Textract with regex-based medical code matching and coordinate-level extraction; integrated LLMs for downstream reasoning and summarization of extracted clinical context
+\item Developed OpenCV and YOLO-based form element detection (checkboxes, radio buttons) with multiprocessing for scalable, high-throughput processing across multiple form versions
+\item Part of team that designed a modular, abstraction-driven RAG pipeline for breast reduction surgery prior-authorization with Pydantic-enforced output schemas encoding complex medical decision logic, engineered for easy extension to additional surgical procedures
+\item Implemented human-in-the-loop GPT-based systems across both projects --- automating approvals, converting clinical criteria into algorithmic decision logic, and enabling rapid document navigation for medical professionals.
+\end{itemize}
+\vspace{3pt}
+\textbf{Data Analysis and Research Intern} \hfill May 2022 -- Aug 2022 (12 weeks) \\
+\textit{TRIUMF (Mitacs GRI, UBC)} \hfill \textit{Vancouver, Canada}
+\begin{itemize}
+ \item Analyzed nuclear decay datasets from experiments on Cs148 $\rightarrow$ Ba148 across multiple runs (GRIFFIN); cleaned data and estimated peaks using mathematical models
+    \item Analyse correlation across electron and gamma-ray detector sources to identify possible underlying causes and new effects
+    \item Worked with ROOT (CERN), C++, and Linux; performed hands-on maintenance of DESCANT detectors for gamma-ray and beta-delayed neutron emission detection 
+    \item Presented by colleagues: Preliminary results on the $^{20}$Ne(p,$\gamma$) reaction rate study using GRIFFIN detectors and the DRAGON recoil spectrometer at TRIUMF, APS HAW23 (\href{https://ui.adsabs.harvard.edu/abs/2023APS..HAWD09003S/abstract}{Abstract})
+\end{itemize}
+\vspace{-1.2em}
+
+\section*{Education \& Projects}
+\vspace{-0.45em}
+
+\textbf{Master of Data Science}, University of British Columbia \hfill Aug 2025 -- 2026 (Ongoing) \\
+\textit{Cumulative Average: 96.6 (ongoing)} \hfill \textit{Vancouver, BC, Canada}
+\begin{itemize}
+    \item \textbf{Projects:} Built a retrieval system for Amazon grocery products using embeddings and LLM pipelines with systematic prompt evaluation (hosted on \href{https://rishadaz-amazon-retriever.hf.space/}{HF Spaces}); developed an LLM-integrated Vancouver crime analytics dashboard; engineered a Python package for Wordle-style word games with automated CI/CD
+    \item \textbf{Hackathon:} Applied contrastive learning to museum beetle specimen imagery to forecast drought and precipitation indices --- bridging computer vision and climate modelling in a low-label, high-stakes prediction setting
+    \item \textbf{Writing:} Authored a technical blog on AI safety and data-driven decision making (\href{https://risha-daz.github.io/posts/data_science/}{AI Safety Blog}), demonstrating ability to communicate complex ML concepts to broader audiences
+\end{itemize}
+\vspace{3pt}
+\textbf{Bachelor of Technology}, Indian Institute of Technology Indore \hfill 2019 -- 2023 \\
+\textit{GPA: 9.25 (Major in Mech Engg.), 10 (Minor in Astronomy)} \hfill \textit{Indore, MP, India}
+\begin{itemize}
+    \item \textbf{Key Courses:} Linear Algebra, Calculus, Numerical Methods, Astronomical Data Analysis Techniques
+    \item \textbf{Projects:} Simulated autonomous drone navigation and landing using dual cameras (C++, OpenCV, Ardupilot, Gazebo); built time-series models for astronomy and physics problems; programmed an Arduino-based automatic dehumidifier for lab equipment protection
+    \item \textbf{Astronomy Club} (3--4 years): Developed and maintained club website (HTML, Nodejs, React); collaborated on research projects applying Python and time-series modelling to real observational data; estimated galaxy eccentricity via Fourier Transform (Python)
+    \item \textbf{Leadership:} Spearheaded ``Netritva,'' a city-wide Student Leadership Summit across local institutes, curating invited talks, student-led sessions, and welfare initiatives to drive cross-campus community building
+    \item \textbf{Voice-Enabled Space Weather Forecasting} (funded, DRISHTI CPS Foundation): Built a full-stack system (Flask, React, PostgreSQL, Azure) with a Vosk-based voice interface for querying space weather data, and designed an API layer for efficient database querying and real-time response delivery.
+
+\end{itemize}
+\vspace{-1.2em}
+
+\section*{Skills}
+\vspace{-0.45em}
+
+\textbf{Languages:} Python, R, C++, JavaScript, SQL \\
+\textbf{ML/DS:} scikit-learn, PyTorch, TensorFlow, Bayesian Statistics, Time Series, Statistical Modelling \\
+\textbf{LLM/AI:} RAG pipelines, Agentic LLMs, Prompt Engineering, LLM Output Evaluation, Pydantic, HuggingFace \\
+\textbf{Tools:} Docker, Git, CI/CD, Cloud (AWS, Azure), Amazon Textract OCR, OpenCV, YOLO \\
+\textbf{Other:} Data Visualization, Databases, Distributed Systems
+```
