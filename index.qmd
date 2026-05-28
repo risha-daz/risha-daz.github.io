@@ -7,7 +7,7 @@ page-layout: full
 <!-- ─── Hero ─────────────────────────────────────────────────────────────── -->
 <div class="hero">
   <p class="hero-name"><span>Sarisha</span> Das</p>
-  <p class="hero-role">MSc Data Science · University of British Columbia · Vancouver</p>
+  <p class="hero-role">Masters of Data Science · University of British Columbia · Vancouver</p>
   <p class="hero-tagline">
     I build things at the intersection of data, systems, and intelligence — from clinical NLP pipelines and RAG architectures to full-stack web applications and statistical models.
     Previously: Associate Software Engineer at Carelon (Anthem). Background in mechanical engineering and observational astronomy.
@@ -36,9 +36,9 @@ page-layout: full
 <!-- ─── Now ──────────────────────────────────────────────────────────────── -->
 <p class="section-label">Currently working on</p>
 <div class="now-section">
+  <span class="now-pill">MDS @ UBC (2025–2026)</span>
   <span class="now-pill">Agentic AI &amp; Multi-agent Workflows</span>
   <span class="now-pill">Locally Deployed LLMs</span>
-  <span class="now-pill">MDS @ UBC (2025–2026)</span>
 </div>
 
 
@@ -249,7 +249,12 @@ page-layout: full
   <div class="gh-card">
     <div class="card-header-row">
       <p class="card-title"><a href="https://rishadaz-amazon-retriever.hf.space/" target="_blank">Amazon Product Retrieval System</a></p>
-      <span class="card-dates">2025–2026</span>
+      <div class="card-header-right">
+        <a class="card-code-link" href="#" target="_blank" title="View code">
+          <svg height="15" width="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <span class="card-dates">2025–2026</span>
+      </div>
     </div>
     <div class="card-body">
       <p>Retrieval system for grocery products using embeddings and LLM pipelines with systematic prompt evaluation. Hosted on Hugging Face Spaces.</p>
@@ -265,7 +270,12 @@ page-layout: full
   <div class="gh-card">
     <div class="card-header-row">
       <p class="card-title">Vancouver Crime Analytics Dashboard</p>
-      <span class="card-dates">2025–2026</span>
+      <div class="card-header-right">
+        <a class="card-code-link" href="#" target="_blank" title="View code">
+          <svg height="15" width="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <span class="card-dates">2025–2026</span>
+      </div>
     </div>
     <div class="card-body">
       <p>LLM-integrated crime analytics dashboard for Vancouver built with R Shiny, combining natural language querying with geospatial visualizations.</p>
@@ -281,7 +291,12 @@ page-layout: full
   <div class="gh-card">
     <div class="card-header-row">
       <p class="card-title">Prior Authorization RAG Pipeline</p>
-      <span class="card-dates">Carelon · 2023–2025</span>
+      <div class="card-header-right">
+        <a class="card-code-link" href="#" target="_blank" title="View code">
+          <svg height="15" width="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <span class="card-dates">Carelon · 2023–2025</span>
+      </div>
     </div>
     <div class="card-body">
       <p>Modular RAG pipeline for breast reduction surgery prior-authorization. Pydantic-enforced output schemas encoding complex medical decision logic, designed for multi-procedure extension.</p>
@@ -297,7 +312,12 @@ page-layout: full
   <div class="gh-card">
     <div class="card-header-row">
       <p class="card-title">Voice-Enabled Space Weather Forecasting</p>
-      <span class="card-dates">DRISHTI CPS Foundation · 2022–2023</span>
+      <div class="card-header-right">
+        <a class="card-code-link" href="#" target="_blank" title="View code">
+          <svg height="15" width="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <span class="card-dates">DRISHTI CPS Foundation · 2022–2023</span>
+      </div>
     </div>
     <div class="card-body">
       <p>Funded full-stack application with a Vosk-based voice interface for querying space weather data. REST API layer for efficient real-time database querying.</p>
@@ -314,7 +334,12 @@ page-layout: full
   <div class="gh-card">
     <div class="card-header-row">
       <p class="card-title">Autonomous Drone Navigation</p>
-      <span class="card-dates">IIT Indore · 2021–2022</span>
+      <div class="card-header-right">
+        <a class="card-code-link" href="#" target="_blank" title="View code">
+          <svg height="15" width="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <span class="card-dates">IIT Indore · 2021–2022</span>
+      </div>
     </div>
     <div class="card-body">
       <p>Simulated autonomous drone navigation and precision landing using dual-camera setup. Built with C++, OpenCV, Ardupilot, and Gazebo simulator.</p>
@@ -329,7 +354,12 @@ page-layout: full
   <div class="gh-card">
     <div class="card-header-row">
       <p class="card-title">Climate Modelling via Contrastive Learning</p>
-      <span class="card-dates">Hackathon · 2025–2026</span>
+      <div class="card-header-right">
+        <a class="card-code-link" href="#" target="_blank" title="View code">
+          <svg height="15" width="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <span class="card-dates">Hackathon · 2025–2026</span>
+      </div>
     </div>
     <div class="card-body">
       <p>Applied contrastive learning to museum beetle specimen imagery to forecast drought and precipitation indices — bridging CV and climate science in a low-label setting.</p>
@@ -348,7 +378,7 @@ page-layout: full
 <p class="section-label">Writing</p>
 <div class="writing-callout">
   I write about AI safety, data-driven decision making, and machine learning at an accessible level.
-  Check out the <a href="blog/index.qmd">blog →</a>, including my post on
+  Check out the <a href="blog/index.qmd">blog</a>, including my post on
   <a href="https://risha-daz.github.io/blog/data_science/" target="_blank">AI Safety &amp; Data Science</a>.
 </div>
 ```
